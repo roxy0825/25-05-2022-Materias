@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El paisa-Turismo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Agencia de turismo El paisa</h2>
+    <h3>Arma tu plan</h3>
+     
+    <form > 
+        <label for=""> Name</label>
+        <input type="text" id="name" name="name" size="30" 
+        required  placeholder="ingrese su nombre" autocomplete="off" 
+        pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,25}+[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,25}+[a-zA-ZñÑáéíóúÁÉÍÓÚüÜ]{2,25}"
+        title="Debe ingresar solo letras y/o espacios">
+        <br>
+        <br>
+        <label for="email">Email </label>
+        <input type="Email" name="email" id="email" placeholder="p.e.usuario@dominio.com"
+        pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
+        <br>
+        <br>
+        <label for="destino">Destino</label>
+        <select name="destino" id="destino">
+            <option value="sd" disabled selected>Selecione un destino</option>
+            <option value="sanandres">San Andres</option>
+            <option value="santamarta">Santa Marta</option>
+            <option value="cartagena">Cartagena</option>
+            <option value="medellin">Medellin</option>
+        
+        </select>
+        <br>
+        <br>
+        <label for="nrodias">Número de días:</label>
+        <br>
+        <br>
+        <input type="radio" id="nrodias2" name="nrodias">2   
+        <input type="radio" id="nrodias4" name="nrodias">4
+        <input type="radio" id="nrodias6" name="nrodias">6
+        <input type="radio" id="nrodias8" name="nrodias">8
+        <br> 
+        <br>
+        <label for="fechasalida">Fecha de Salida</label>
+        <input type="date" name="fechasalida" id="fechasalida" placeholder="Ingrese la fecha de salida" required>
+        <br>
+        <br>
+        <label for="numeropersonas">Nuemero de personas</label>
+        <input type="number" name="nroper" id="nroper" min="1" max="10" required placeholder="Número de personas"  >
+        <br>
+        <br>
+        <label>Adiccionales</label>
+        <br>
+        <br>
+        <input type="checkbox" name="tour" id="tour" checked>Tour por ciudad
+        <br>
+        <br>
+        <input type="checkbox" name="discotk" id="discotk">Discoteca-Barra libre
+        <br>
+        <br>
+        <input type="checkbox" name="alquilerveiculo" id="alquilerveiculo">Alquiler Veiculo
+        <br>
+        <br>
+        <label for="comentarios">Comentarios y/o sugerencias</label>
+        <br>
+        <textarea name="comentarios" id="comentarios" cols="50" rows="10" placeholder="Sus comentarios..."></textarea>
+        <br>
+        <br>
+        <button id="enviar" name="enviar"type="submit">Enviar</button>
+        <button type="reset" id="limpiar" name="limpiar"> Limpiar datos</button>
+    
+    </form>
+ </body>
+ </html>
+
+   
+    
+    
+
+
+
+        

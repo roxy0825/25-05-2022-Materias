@@ -1,0 +1,8 @@
+ol{
+     list-style-type:lower-latin;
+}
+li{
+     font-size: 20px; /*tamaño de la fuente */
+     font-weight: bold;
+     font-family: courier,monospace,verdana;
+}
